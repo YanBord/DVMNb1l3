@@ -1,4 +1,4 @@
-# My mailing program\
+# My mailing program
 
 # How to install
 Python version required: 3.7+
