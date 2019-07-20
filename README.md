@@ -6,9 +6,9 @@ Python version required: 3.7+
    Venv setup example: \
    `python3 -m venv myenv`\
    `source myenv/bin/activate`
-2. Open .env and correct values:
-login - login for your email
-password - password for your email
+2. Open .env and correct values: \
+login - login for your email \
+password - password for your email 
 3. Add new environment parameters to Your system: source .env
 
 # How to run
