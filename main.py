@@ -1,7 +1,7 @@
 import smtplib
 import os
-login = os.getenv('LOGIN')
-password = os.getenv('PASSWORD')
+mail_login = os.getenv('MAIL_LOGIN')
+mail_password = os.getenv('MAIL_PASSWORD')
 
 my_letter = ("""From: yan.bordousov@yandex.ru
 To: shinodyan@yandex.ru 
@@ -26,7 +26,7 @@ Content-Type: text/plain; charset="UTF-8";
 На модули, которые еще не вышли, можно подписаться и получить уведомление о релизе сразу на имейл.""".format('Вальдемар', 'Ян', 'devman.org'))
 
 server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
-server.login(login, password)
+server.login(mail_login, mail_password)
 server.sendmail('yan.bordousov@yandex.ru','shinodyan@yandex.ru', my_letter.encode("UTF-8"))
 server.quit()
 
