@@ -30,4 +30,4 @@ server.login(mail_login, mail_password)
 server.sendmail('yan.bordousov@yandex.ru','shinodyan@yandex.ru', my_letter.encode("UTF-8"))
 server.quit()
 
-print(my_letter.encode("UTF-8"))
+my_letter.encode("UTF-8")
